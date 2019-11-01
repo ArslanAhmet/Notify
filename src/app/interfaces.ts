@@ -8,7 +8,11 @@ created: Date;
 caller: Caller;
 dialed: string;
 }
-
+export interface Acknowledgement {
+    timestamp: Date;
+    user: string;
+    note: string;
+  }
 export interface Caller {
     id: string;
     firstName: string;
